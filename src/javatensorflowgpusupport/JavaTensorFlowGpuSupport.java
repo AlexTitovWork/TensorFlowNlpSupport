@@ -21,7 +21,7 @@ public class JavaTensorFlowGpuSupport {
   public static void main(String[] args) throws Exception {
     try (Graph g = new Graph()) {
       final String value = "Hello from " + TensorFlow.version();
-
+      //test commit
       // Construct the computation graph with a single operation, a constant
       // named "MyConst" with a value "value".
       try (Tensor t = Tensor.create(value.getBytes("UTF-8"))) {
